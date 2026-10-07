@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive interactive form built for Codveda Level 1 Task 2.">
+  <title>Join TechWave — Create Your Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main class="page-shell">
+    <section class="form-card" aria-labelledby="form-title">
+      <a class="brand" href="#" aria-label="TechWave home"><span
+          class="brand-icon">T</span><span>Tech<span>Wave</span></span></a>
+      <div class="form-heading">
+        <p class="eyebrow">JOIN OUR COMMUNITY</p>
+        <h1 id="form-title">Create your account</h1>
+        <p class="subtitle">Sign up to get the latest ideas, episodes, and updates from TechWave.</p>
+      </div>
+      <form id="signupForm" novalidate>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="e.g. Khadija Khatun" autocomplete="name"
+            aria-describedby="nameError" required>
+          <small class="error" id="nameError"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"
+            aria-describedby="emailError" required>
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. 01712345678" autocomplete="tel" inputmode="tel"
+            aria-describedby="phoneError" required>
+          <small class="error" id="phoneError"></small>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input id="password" name="password" type="password" placeholder="At least 8 characters"
+              autocomplete="new-password" aria-describedby="passwordHint passwordError" required>
+            <button type="button" class="show-password" id="togglePassword" aria-label="Show password">Show</button>
+          </div>
+          <small class="hint" id="passwordHint">Use 8+ characters with uppercase, lowercase, and a number.</small>
+          <small class="error" id="passwordError"></small>
+          <div class="strength-track" aria-hidden="true"><span id="strengthBar"></span></div>
+          <small class="strength-label" id="strengthLabel" aria-live="polite"></small>
+        </div>
+        <label class="terms-row" for="terms">
+          <input id="terms" name="terms" type="checkbox" aria-describedby="termsError" required>
+          <span>I agree to the <a href="#privacy">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.</span>
+        </label>
+        <small class="error terms-error" id="termsError"></small>
+        <button class="submit-button" type="submit">Create account <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      <div class="divider"><span>SECURE SIGN UP</span></div>
+      <p class="footer-note">Made with care for curious minds. <span>✦</span></p>
+    </section>
+    <aside class="side-panel" aria-label="TechWave introduction">
+      <div class="side-orb orb-a"></div>
+      <div class="side-orb orb-b"></div>
+      <div class="side-content">
+        <span class="side-tag">✦ THINK. LEARN. GROW.</span>
+        <h2>Your next big idea starts with a <span>conversation.</span></h2>
+        <p>Join a community that explores technology, productivity, and personal growth — one episode at a time.</p>
+        <div class="side-stat"><strong>10K+</strong><span>curious minds and counting</span></div>
+      </div>
+      <div class="side-bottom"><span>TECHWAVE COMMUNITY</span><span>01 / 02</span></div>
+    </aside>
+  </main>
+</body>
+
+</html>
